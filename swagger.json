@@ -1,0 +1,12 @@
+{
+    "opeapi": "3.0.0",
+    "info": {
+        "title": "API Rick and Morty",
+        "description": "API para visualização de personagens do seriado Rick and Morty",
+        "termsOfService": "",
+        "contact": {
+            "email": "jorgez.anjos@gmail.com"
+        },
+        "version": "1.0.0"
+    }
+}

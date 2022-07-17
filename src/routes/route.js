@@ -1,3 +1,5 @@
+const swaggerUi = require('swagger-ui-express');
+const swaggerDocument = require('../../swagger.json');
 const route = require('express').Router();
 const constrollerPersonagens = require('../controllers/controller');
 const {
@@ -6,6 +8,9 @@ const {
   validObjectBody,
   validAssignment,
 } = require('../middlewares/midleware');
+
+route.use('/api-docs', swaggerUi.serve);
+route.get('/api-docs', swaggerUi.setup(swaggerDocument));
 
 route.get(
   '/all-personagens',
