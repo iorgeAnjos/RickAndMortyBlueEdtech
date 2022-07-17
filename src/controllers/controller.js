@@ -21,8 +21,7 @@ const createPersonagemController = async (req, res) => {
 };
 const updatePersonagemController = async (req, res) => {
   const idParam = req.params.id;
-  const personagemEdit = req.body; /* 
-  const chosenPersonagem = await personagemService.findPersonagemByIdService(idParam) */
+  const personagemEdit = req.body; 
   const updatedPersonagem = await personagemService.updatePersonagemService(
     idParam,
     personagemEdit,

@@ -1,11 +1,11 @@
 const mongoose = require('mongoose');
 const connectToDatabase = () => {
-  mongoose.connect('mongodb://localhost:27017/rick-morty', {
+  mongoose.connect(process.env.URI_DATABASE, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
   .then(()=>{
-    console.log('MongoDB CONECTADO')
+    console.log('MongoDB Atlas CONECTADO')
   })
   .catch((error)=>{
 return console.log(`Erro na conexão com o banco: ${error}`)
